@@ -18,7 +18,7 @@ const Committee = () => {
                             className="memberImage"
                         />
                         <p className="name">Dr. Ashok Shettar</p>
-                        <p className="designation">Vice Chancellor</p>
+                        <p className="designation">Pro Chancellor</p>
                     </div>
                 </div>
                 <div className="advisorsContainer">
@@ -86,6 +86,18 @@ const Committee = () => {
                         />
                         <p className="name">Dr. Vijayalakshmi. M</p>
                         <p className="designation">HoS, SoCSE</p>
+
+                    </div>
+                    <div className="member">
+                        <p className="title">‎</p>
+                        <img
+                            src="/Neha_ma'am"
+                            alt="Neha_ma'am"
+                            className="memberImage"
+                        />
+                        <p className="name">Mrs Neha T</p>
+                        <p className="designation">Faculty, SoCSE</p>
+
                     </div>
                 </div>
                 <div className="coAmbassadorsContainer">

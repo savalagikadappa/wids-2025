@@ -5,21 +5,16 @@ function Description() {
     <div className="description">
       <div className="content">
         <p>
-          Join us for an inspiring workshop on data science, featuring expert speakers and insightful sessions. 
-          This event is a part of the global Women in Data Science (WiDS) initiative, aimed at empowering women 
-          in the field of data science. Be part of a movement that bridges the gap and fosters innovation in 
-          data science. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eius molestias! 
-          Dicta quisquam, et, illum ipsam doloribus minus natus amet harum blanditiis consequuntur maiores! 
-          Dolorem corporis pariatur aperiam nihil deserunt quidem molestiae nulla sunt! Error totam, 
-          sunt ducimus sapiente fugiat animi voluptatum ullam voluptates incidunt. Cumque deserunt, 
-          eos beatae iste voluptatem ducimus laborum nemo harum, explicabo, perspiciatis fugiat? 
-          Quam animi rem harum placeat quo tempore eos quos amet unde veniam.
+          WiDS Hubballi is independently organized by KLE Technological University to be part of the mission to increase participation of women in data science and to feature outstanding women doing outstanding work.
         </p>
+        <p><b>The 8th Annual WiDS Datathon 2025 Challenge: Unraveling the Mysteries of the Female Brain</b></p>
+        <p>The WiDS Datathon continues its mission to empower women in data science, providing a platform for participants worldwide to enhance their skills and connect with like-minded individuals. Open to data scientists of all levels, including beginners, the 8th annual WiDS Datathon focuses on advancing research in women’s brain health. In support of this global challenge, WiDS Hubballi is hosting a Datathon Workshop to help participants build essential data science skills and engage effectively in the competition. Experts in the field will lead sessions, offering valuable insights into machine learning applications in neuroscience and guiding participants in developing analytical solutions for real-world healthcare challenges.</p>
+
       </div>
       <div className="past-events">
         <h3>Past Events</h3>
         <ul>
-          <li><a href="#">WiDS Workshop 2024</a></li>
+          <li><a href="https://wids.kletech.ac.in/">WiDS Workshop 2024</a></li>
           <li><a href="#">WiDS Workshop 2023</a></li>
           <li><a href="#">WiDS Workshop 2022</a></li>
         </ul>

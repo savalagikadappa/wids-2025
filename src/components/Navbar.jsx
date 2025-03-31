@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav>
       <div className="logo">
-        <img src="/nav-logo-wids.png" alt="Left Logo" />
+        <img src="/wids-matrix-1line-logo1.jpg" alt="Left Logo" />
       </div>
       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         {/* Hamburger icon (three lines) */}
@@ -20,7 +20,7 @@ function Navbar() {
         <li><a href="#speaker" onClick={() => setIsOpen(false)}>Speaker</a></li>
         <li><a href="#committee" onClick={() => setIsOpen(false)}>Committee</a></li>
       </ul>
-      <div className="logo">
+      <div className="rlogo">
         <img src="/kletech-logo.png" alt="Right Logo" />
       </div>
     </nav>

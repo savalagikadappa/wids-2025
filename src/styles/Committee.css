@@ -1,277 +1,321 @@
 .committee {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f9f9f9;
-    color: #333;
-    font-family: "Roboto", sans-serif;
-  }
-  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: #4ab969;
+  color: white;
+  font-size: 2rem;
+  /* 32px */
+  padding: 2.5rem;
+  /* 40px */
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.section {
+  width: 100%;
+  padding: 0.25rem;
+  /* 4px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  /* 24px */
+}
+
+.patronContainer,
+.ambassadorContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advisorsContainer,
+.coAmbassadorsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.memberGroup,
+.organizerGroup {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  /* 12px */
+  flex-wrap: wrap;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  text-align: center;
+  margin: 1.25rem 0;
+}
+
+.memberImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1.25rem;
+  /* 20px */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.memberImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 1.25rem;
+  /* 20px */
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  /* 8px */
+  text-align: center;
+}
+
+.name {
+  font-size: 1.125rem;
+  /* 18px */
+  font-weight: 500;
+}
+
+.designation {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  /* 16px */
+}
+
+.organizersContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  /* 40px */
+}
+
+.organizerName {
+  font-size: 1.25rem;
+  /* 20px */
+  font-weight: 500;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small screens (phones, up to 600px) */
+@media (max-width: 600px) {
   .header {
-    width: 100%;
-    background-color: #4ab969;
-    color: white;
-    font-size: 2rem; /* 32px */
-    padding: 2.5rem; /* 40px */
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
+    font-size: 1.5rem;
+    /* 24px */
+    padding: 1.5rem;
+    /* 24px */
   }
-  
+
   .section {
-    width: 100%;
-    padding: 0.25rem; /* 4px */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem; /* 24px */
+    padding: 0.5rem;
+    /* 8px */
+    gap: 1rem;
+    /* 16px */
   }
-  
+
+  .memberImage {
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    /* 16px */
+  }
+
+  .title {
+    font-size: 1rem;
+    /* 16px */
+  }
+
+  .name {
+    font-size: 1rem;
+    /* 16px */
+  }
+
+  .designation {
+    font-size: 0.875rem;
+    /* 14px */
+  }
+
+  .organizerName {
+    font-size: 1rem;
+    /* 16px */
+  }
+
+  .memberGroup,
+  .organizerGroup {
+    flex-direction: column;
+    gap: 0.5rem;
+    /* 8px */
+  }
+}
+
+/* Medium screens (tablets, 601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .header {
+    font-size: 2rem;
+    /* 32px */
+    padding: 2rem;
+    /* 32px */
+  }
+
+  .section {
+    padding: 1rem;
+    /* 16px */
+    gap: 1.25rem;
+    /* 20px */
+  }
+
   .patronContainer,
   .ambassadorContainer {
     width: 100%;
-    display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    gap: 2rem;
+    /* 32px */
   }
-  
+
   .advisorsContainer,
   .coAmbassadorsContainer {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
-  
-  .memberGroup,
-  .organizerGroup {
-    display: flex;
-    justify-content: center;
-    gap: 0.75rem; /* 12px */
-    flex-wrap: wrap;
+
+  .memberGroup {
+    gap: 1.5rem;
+    /* 24px */
   }
-  
-  .member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 500px;
-    text-align: center;
-    margin: 1.25rem 0; /* 20px */
-  }
-  
+
   .memberImage {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 1.25rem; /* 20px */
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 120px;
+    height: 120px;
   }
-  
-  .memberImage:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
+
   .title {
-    font-size: 1.25rem; /* 20px */
-    font-weight: 500;
-    margin-bottom: 0.5rem; /* 8px */
-    text-align: center;
+    font-size: 1.125rem;
+    /* 18px */
   }
-  
+
   .name {
-    font-size: 1.125rem; /* 18px */
-    font-weight: 500;
+    font-size: 1rem;
+    /* 16px */
   }
-  
-  .designation {
-    font-weight: 400;
-    margin-bottom: 1rem; /* 16px */
-  }
-  
-  .organizersContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2.5rem; /* 40px */
-  }
-  
+
   .organizerName {
-    font-size: 1.25rem; /* 20px */
-    font-weight: 500;
+    font-size: 1.125rem;
+    /* 18px */
   }
-  
-  /* Media Queries for Responsiveness */
-  
-  /* Small screens (phones, up to 600px) */
-  @media (max-width: 600px) {
-    .header {
-      font-size: 1.5rem; /* 24px */
-      padding: 1.5rem; /* 24px */
-    }
-  
-    .section {
-      padding: 0.5rem; /* 8px */
-      gap: 1rem; /* 16px */
-    }
-  
-    .memberImage {
-      width: 100px;
-      height: 100px;
-      margin: 1rem; /* 16px */
-    }
-  
-    .title {
-      font-size: 1rem; /* 16px */
-    }
-  
-    .name {
-      font-size: 1rem; /* 16px */
-    }
-  
-    .designation {
-      font-size: 0.875rem; /* 14px */
-    }
-  
-    .organizerName {
-      font-size: 1rem; /* 16px */
-    }
-  
-    .memberGroup,
-    .organizerGroup {
-      flex-direction: column;
-      gap: 0.5rem; /* 8px */
-    }
+}
+
+/* Large screens (desktops, 901px and above) */
+@media (min-width: 901px) {
+  .header {
+    font-size: 2.25rem;
+    /* 36px */
+    padding: 2.5rem;
+    /* 40px */
   }
-  
-  /* Medium screens (tablets, 601px to 900px) */
-  @media (min-width: 601px) and (max-width: 900px) {
-    .header {
-      font-size: 2rem; /* 32px */
-      padding: 2rem; /* 32px */
-    }
-  
-    .section {
-      padding: 1rem; /* 16px */
-      gap: 1.25rem; /* 20px */
-    }
-  
-    .patronContainer,
-    .ambassadorContainer {
-      width: 100%;
-      flex-direction: row;
-      justify-content: center;
-      gap: 2rem; /* 32px */
-    }
-  
-    .advisorsContainer,
-    .coAmbassadorsContainer {
-      width: 100%;
-    }
-  
-    .memberGroup {
-      gap: 1.5rem; /* 24px */
-    }
-  
-    .memberImage {
-      width: 120px;
-      height: 120px;
-    }
-  
-    .title {
-      font-size: 1.125rem; /* 18px */
-    }
-  
-    .name {
-      font-size: 1rem; /* 16px */
-    }
-  
-    .organizerName {
-      font-size: 1.125rem; /* 18px */
-    }
+
+  .section {
+    padding: 4rem;
+    /* 64px */
+    flex-direction: row;
+    justify-content: space-between;
   }
-  
-  /* Large screens (desktops, 901px and above) */
-  @media (min-width: 901px) {
-    .header {
-      font-size: 2.25rem; /* 36px */
-      padding: 2.5rem; /* 40px */
-    }
-  
-    .section {
-      padding: 4rem; /* 64px */
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .patronContainer {
-      width: 33.33%;
-      flex-direction: row;
-      gap: 2rem; /* 32px */
-    }
-  
-    .advisorsContainer {
-      width: 66.67%;
-    }
-  
-    .ambassadorContainer {
-      width: 33.33%;
-      flex-direction: row;
-      gap: 2rem; /* 32px */
-    }
-  
-    .coAmbassadorsContainer {
-      width: 66.67%;
-    }
-  
-    .memberGroup {
-      gap: 2rem; /* 32px */
-    }
-  
-    .organizerGroup {
-      gap: 2rem; /* 32px */
-      flex-direction: row;
-    }
-  
-    .member {
-      margin: 0;
-    }
-  
-    .designation {
-      margin-bottom: 1rem; /* 16px */
-    }
+
+  .patronContainer {
+    width: 33.33%;
+    flex-direction: row;
+    gap: 2rem;
+    /* 32px */
   }
-  
-  /* Very small screens (below 400px, e.g., older phones) */
-  @media (max-width: 400px) {
-    .header {
-      font-size: 1.25rem; /* 20px */
-      padding: 1rem; /* 16px */
-    }
-  
-    .memberImage {
-      width: 80px;
-      height: 80px;
-      margin: 0.75rem; /* 12px */
-    }
-  
-    .title,
-    .name,
-    .organizerName {
-      font-size: 0.875rem; /* 14px */
-    }
-  
-    .designation {
-      font-size: 0.75rem; /* 12px */
-    }
+
+  .advisorsContainer {
+    width: 66.67%;
   }
+
+  .ambassadorContainer {
+    width: 33.33%;
+    flex-direction: row;
+    gap: 2rem;
+    /* 32px */
+  }
+
+  .coAmbassadorsContainer {
+    width: 66.67%;
+  }
+
+  .memberGroup {
+    gap: 2rem;
+    /* 32px */
+  }
+
+  .organizerGroup {
+    gap: 2rem;
+    /* 32px */
+    flex-direction: row;
+  }
+
+  .member {
+    margin: 0;
+  }
+
+  .designation {
+    margin-bottom: 1rem;
+    /* 16px */
+  }
+}
+
+/* Very small screens (below 400px, e.g., older phones) */
+@media (max-width: 400px) {
+  .header {
+    font-size: 1.25rem;
+    /* 20px */
+    padding: 1rem;
+    /* 16px */
+  }
+
+  .memberImage {
+    width: 80px;
+    height: 80px;
+    margin: 0.75rem;
+    /* 12px */
+  }
+
+  .title,
+  .name,
+  .organizerName {
+    font-size: 0.875rem;
+    /* 14px */
+  }
+
+  .designation {
+    font-size: 0.75rem;
+    /* 12px */
+  }
+}

@@ -31,10 +31,26 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+
+.rlogo {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
 }
 
 .logo img {
-    height: 80px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.rlogo img {
+    max-width: 100%;
+    height: auto;
     margin-right: 10px;
 }
 
@@ -109,6 +125,7 @@ nav ul li a:hover::after {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+
 /* Speakers section */
 .speakers {
     width: 100%;
@@ -119,6 +136,7 @@ nav ul li a:hover::after {
     background-color: #fff;
     color: #333;
     font-family: "Roboto", sans-serif;
+    padding: 3rem 2rem;
 }
 
 .section-title {
@@ -126,39 +144,45 @@ nav ul li a:hover::after {
     background-color: #4ab969;
     color: white;
     font-size: 2rem;
-    padding: 2.5rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
-    font-weight: 400;
-    margin: 0;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    border-radius: 8px 8px 0 0;
 }
 
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    /* Increased gap to 48px for more spacing */
+    gap: 2.5rem;
     flex-wrap: wrap;
     padding: 2rem;
 }
 
 .card {
+    background: #dcf8e8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 350px;
-    /* Increased max-width for better spacing */
-    margin: 1.5rem 0;
-    /* Increased margin to 24px */
+    max-width: 340px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
-    width: 250px;
-    /* Increased to 200px to match the second image */
-    height: 250px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
-    margin: 1rem;
+    margin-bottom: 1rem;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -169,24 +193,25 @@ nav ul li a:hover::after {
 }
 
 .card h3 {
-    font-size: 1.5rem;
-    /* Increased to 24px */
+    font-size: 1.4rem;
     font-weight: bold;
-    /* Bolded names */
-    margin: 0.75rem 0;
-    /* Increased margin to 12px */
+    color: #222;
+    margin-bottom: 0.5rem;
 }
 
 .card p {
     font-size: 1rem;
-    /* 16px */
-    font-weight: 400;
-    margin: 0.25rem 0;
+    color: #555;
+    margin-bottom: 0.5rem;
 }
 
 .card p strong {
-    font-weight: 500;
+    font-weight: 600;
+    color: #333;
 }
+
+
+
 
 /* Hero section */
 .hero {
@@ -346,10 +371,15 @@ footer {
     margin-top: 20px;
 }
 
+
 /* Media Queries for Responsiveness */
 @media (max-width: 600px) {
     .hamburger {
         display: flex;
+    }
+
+    nav {
+        padding: 10px 20px;
     }
 
     nav ul {
@@ -363,14 +393,16 @@ footer {
         overflow: hidden;
         text-align: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: max-height 0.3s ease-in-out;
     }
 
     nav ul.open {
-        max-height: 200px;
+        max-height: 250px;
+        /* increased for smoother expansion */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 2px 0;
     }
 
     nav ul li a {
@@ -378,11 +410,11 @@ footer {
     }
 
     .logo img {
-        height: 50px;
+        height: 90px;
     }
 
-    nav {
-        padding: 10px 20px;
+    .rlogo img {
+        height: 50px;
     }
 
     .section-title {
@@ -426,6 +458,17 @@ footer {
     .hero button {
         padding: 10px 20px;
         font-size: 16px;
+        background-color: #007BFF;
+        /* added background color */
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .hero button:hover {
+        background-color: #0056b3;
     }
 
     .description {
@@ -449,12 +492,47 @@ footer {
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
+    .hamburger {
+        display: flex;
+    }
+
     nav {
-        padding: 15px 30px;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: whitesmoke;
+        max-height: 0;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    nav ul.open {
+        max-height: 250px;
+        /* increased for smoother expansion */
+    }
+
+    nav ul li {
+        margin: 2px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
     }
 
     .logo img {
         height: 60px;
+    }
+
+    .rlogo img {
+        height: 40px;
     }
 
     nav ul li {
@@ -498,6 +576,16 @@ footer {
     .hero button {
         padding: 10px 22px;
         font-size: 16px;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .hero button:hover {
+        background-color: #0056b3;
     }
 
     .description {
@@ -523,6 +611,10 @@ footer {
         padding: 20px 40px;
     }
 
+    .logo img {
+        max-width: 200px;
+    }
+
     .section-title {
         font-size: 2.25rem;
         padding: 2.5rem;
@@ -536,19 +628,43 @@ footer {
         padding: 70px 20px;
     }
 
+    .hero h1 {
+        font-size: 42px;
+        /* slightly larger for desktop */
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .hero button {
+        padding: 12px 24px;
+        font-size: 18px;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .hero button:hover {
+        background-color: #0056b3;
+    }
+
     .description {
         padding: 20px;
         margin: 20px;
     }
 
     .description .content {
-        max-width: 800px;
+        max-width: 1000px;
     }
 }
 
 @media (max-width: 400px) {
     .logo img {
-        height: 40px;
+        height: 80px;
     }
 
     nav ul li a {
@@ -585,5 +701,15 @@ footer {
     .hero button {
         padding: 8px 15px;
         font-size: 14px;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .hero button:hover {
+        background-color: #0056b3;
     }
 }
