@@ -3,7 +3,7 @@ import React from 'react';
 function Speakers() {
   return (
     <div className="speakers" id="speaker">
-      <h2 className="section-title">Unraveling the Mysteries of the Female Brain</h2>
+      <h2 className="section-title">Speakers</h2>
       <div className="card-container">
         {/* Workshop 1 */}
         <div className="card">  <h3>Workshop 1</h3>
