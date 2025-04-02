@@ -7,7 +7,7 @@ function Hero() {
       <p>
         WIDS Datathon Workshop 2025 <br />
         (Online Mode)<br />
-        Jan 5, 2025 | 10:30 AM to 12:30 PM
+        April 19, 2025 | 10:30 AM to 12:30 PM
       </p>
       <button>Register Now</button>
     </div>

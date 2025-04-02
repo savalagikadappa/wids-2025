@@ -3,11 +3,16 @@ html {
 }
 
 body {
+    width: 100%;
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+}
+
+#root {
+    width: 100%;
 }
 
 [id] {
@@ -125,8 +130,7 @@ nav ul li a:hover::after {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-
-/* Speakers section */
+/* Speakers Section */
 .speakers {
     width: 100%;
     display: flex;
@@ -171,6 +175,7 @@ nav ul li a:hover::after {
     max-width: 340px;
     padding: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .card:hover {
@@ -192,22 +197,54 @@ nav ul li a:hover::after {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Workshop Title */
 .card h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Speaker Name */
+.card p:nth-of-type(2) {
+    font-size: 1.3rem;
     font-weight: bold;
-    color: #222;
-    margin-bottom: 0.5rem;
+    color: #1b5e20;
+    margin-bottom: 0.3rem;
 }
 
-.card p {
+/* Designation */
+.card p:nth-of-type(3) {
     font-size: 1rem;
-    color: #555;
+    font-weight: 500;
+    color: #444;
+    font-style: italic;
     margin-bottom: 0.5rem;
 }
 
-.card p strong {
+/* Topic Styling */
+.card p:nth-of-type(1) {
+    font-size: 1.1rem;
     font-weight: 600;
-    color: #333;
+    color: #222;
+    margin-bottom: 0.8rem;
+    text-decoration: underline;
+}
+
+/* Email & Date-Time */
+.card p:nth-last-of-type(3),
+.card p:nth-last-of-type(2),
+.card p:nth-last-of-type(1) {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.card p:nth-last-of-type(1) {
+    font-weight: bold;
+    color: #e74c3c;
 }
 
 
@@ -217,7 +254,7 @@ nav ul li a:hover::after {
 .hero {
     text-align: center;
     padding: 70px 20px;
-    background: linear-gradient(120deg, #ff7eb3, #6a11cb, #2575fc);
+    background: rgb(88, 141, 88);
     color: white;
     animation: gradientBG 6s infinite alternate;
 }

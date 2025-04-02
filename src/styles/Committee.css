@@ -1,321 +1,107 @@
+/* General Styles */
 .committee {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f9f9f9;
-  color: #333;
-  font-family: "Roboto", sans-serif;
-}
-
-.header {
-  width: 100%;
-  background-color: #4ab969;
-  color: white;
-  font-size: 2rem;
-  /* 32px */
-  padding: 2.5rem;
-  /* 40px */
-  display: flex;
-  justify-content: center;
-  font-weight: 400;
-}
-
-.section {
-  width: 100%;
-  padding: 0.25rem;
-  /* 4px */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  /* 24px */
-}
-
-.patronContainer,
-.ambassadorContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.advisorsContainer,
-.coAmbassadorsContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.memberGroup,
-.organizerGroup {
-  display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  /* 12px */
-  flex-wrap: wrap;
-}
-
-.member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 500px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  margin: 1.25rem 0;
 }
 
-.memberImage {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 1.25rem;
-  /* 20px */
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Header */
+.header {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.memberImage:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+/* Section Styles */
+.section {
+  margin-bottom: 30px;
 }
 
 .title {
-  font-size: 1.25rem;
-  /* 20px */
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  /* 8px */
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Member Styles */
+.memberGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 180px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+.memberImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #3498db;
 }
 
 .name {
-  font-size: 1.125rem;
-  /* 18px */
+  font-size: 16px;
   font-weight: 500;
+  color: #333;
 }
 
 .designation {
-  font-weight: 400;
-  margin-bottom: 1rem;
-  /* 16px */
+  font-size: 14px;
+  color: #777;
 }
 
+/* Organizers */
 .organizersContainer {
-  width: 100%;
+  margin-top: 30px;
+}
+
+.organizerGroup {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 2.5rem;
-  /* 40px */
+  gap: 10px;
 }
 
 .organizerName {
-  font-size: 1.25rem;
-  /* 20px */
+  background: #3498db;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
   font-weight: 500;
 }
 
-/* Media Queries for Responsiveness */
-
-/* Small screens (phones, up to 600px) */
+/* Responsive */
 @media (max-width: 600px) {
-  .header {
-    font-size: 1.5rem;
-    /* 24px */
-    padding: 1.5rem;
-    /* 24px */
-  }
-
-  .section {
-    padding: 0.5rem;
-    /* 8px */
-    gap: 1rem;
-    /* 16px */
-  }
-
-  .memberImage {
-    width: 100px;
-    height: 100px;
-    margin: 1rem;
-    /* 16px */
-  }
-
-  .title {
-    font-size: 1rem;
-    /* 16px */
-  }
-
-  .name {
-    font-size: 1rem;
-    /* 16px */
-  }
-
-  .designation {
-    font-size: 0.875rem;
-    /* 14px */
-  }
-
-  .organizerName {
-    font-size: 1rem;
-    /* 16px */
-  }
-
-  .memberGroup,
-  .organizerGroup {
+  .memberGroup {
     flex-direction: column;
-    gap: 0.5rem;
-    /* 8px */
-  }
-}
-
-/* Medium screens (tablets, 601px to 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-  .header {
-    font-size: 2rem;
-    /* 32px */
-    padding: 2rem;
-    /* 32px */
-  }
-
-  .section {
-    padding: 1rem;
-    /* 16px */
-    gap: 1.25rem;
-    /* 20px */
-  }
-
-  .patronContainer,
-  .ambassadorContainer {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-    /* 32px */
-  }
-
-  .advisorsContainer,
-  .coAmbassadorsContainer {
-    width: 100%;
-  }
-
-  .memberGroup {
-    gap: 1.5rem;
-    /* 24px */
-  }
-
-  .memberImage {
-    width: 120px;
-    height: 120px;
-  }
-
-  .title {
-    font-size: 1.125rem;
-    /* 18px */
-  }
-
-  .name {
-    font-size: 1rem;
-    /* 16px */
-  }
-
-  .organizerName {
-    font-size: 1.125rem;
-    /* 18px */
-  }
-}
-
-/* Large screens (desktops, 901px and above) */
-@media (min-width: 901px) {
-  .header {
-    font-size: 2.25rem;
-    /* 36px */
-    padding: 2.5rem;
-    /* 40px */
-  }
-
-  .section {
-    padding: 4rem;
-    /* 64px */
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .patronContainer {
-    width: 33.33%;
-    flex-direction: row;
-    gap: 2rem;
-    /* 32px */
-  }
-
-  .advisorsContainer {
-    width: 66.67%;
-  }
-
-  .ambassadorContainer {
-    width: 33.33%;
-    flex-direction: row;
-    gap: 2rem;
-    /* 32px */
-  }
-
-  .coAmbassadorsContainer {
-    width: 66.67%;
-  }
-
-  .memberGroup {
-    gap: 2rem;
-    /* 32px */
-  }
-
-  .organizerGroup {
-    gap: 2rem;
-    /* 32px */
-    flex-direction: row;
+    align-items: center;
   }
 
   .member {
-    margin: 0;
-  }
-
-  .designation {
-    margin-bottom: 1rem;
-    /* 16px */
-  }
-}
-
-/* Very small screens (below 400px, e.g., older phones) */
-@media (max-width: 400px) {
-  .header {
-    font-size: 1.25rem;
-    /* 20px */
-    padding: 1rem;
-    /* 16px */
-  }
-
-  .memberImage {
-    width: 80px;
-    height: 80px;
-    margin: 0.75rem;
-    /* 12px */
-  }
-
-  .title,
-  .name,
-  .organizerName {
-    font-size: 0.875rem;
-    /* 14px */
-  }
-
-  .designation {
-    font-size: 0.75rem;
-    /* 12px */
+    width: 100%;
+    max-width: 250px;
   }
 }
