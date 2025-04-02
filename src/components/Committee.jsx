@@ -72,7 +72,7 @@ const Committee = () => {
                 <p className="title">WiDS Co-Ambassadors</p>
                 <div className="memberGroup">
                     <div className="member">
-                        <img src="/Neha_ma'am" alt="Mrs Neha T" className="memberImage" />
+                        <img src="/nehamadam.jpeg" alt="Mrs Neha T" className="memberImage" />
                         <p className="name">Mrs. Neha T</p>
                         <p className="designation">Faculty, SoCSE</p>
                     </div>
