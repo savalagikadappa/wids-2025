@@ -35,7 +35,7 @@ function Speakers() {
             {/* Speaker 2 */}
             <div className="speaker-box">
               <img src="/saroja-speaker.png" alt="Dr. Saroja Naik" />
-              <p><strong>Topic:</strong> Brain Health and Neurology</p>
+              <p><strong>Topic:</strong> Unraveling the Mysteries of the Female Brain</p>
               <p className="saroja"><strong>Speaker:</strong> Dr. Saroja Naik</p>
               <p>Neurologist and Expert in Brain Health</p>
               <p><strong>Time:</strong> 10:00 am to 11:00 am IST</p>
