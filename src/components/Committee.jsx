@@ -71,16 +71,19 @@ const Committee = () => {
             <div className="coAmbassadorsContainer">
                 <p className="title">WiDS Co-Ambassadors</p>
                 <div className="memberGroup">
-                    <div className="member">
-                        <img src="/nehamadam.jpeg" alt="Mrs Neha T" className="memberImage" />
-                        <p className="name">Mrs. Neha T</p>
-                        <p className="designation">Faculty, SoCSE</p>
-                    </div>
+                    
                     <div className="member">
                         <img src="/co-ambassador-padmashree.jpg" alt="Dr. Padmashree Desai" className="memberImage" />
                         <p className="name">Dr. Padmashree Desai</p>
                         <p className="designation">Professor, SoCSE</p>
                     </div>
+
+                    <div className="member">
+                        <img src="/nehamadam.jpeg" alt="Mrs Neha T" className="memberImage" />
+                        <p className="name">Mrs. Neha T</p>
+                        <p className="designation">Faculty, SoCSE</p>
+                    </div>
+
                 </div>
             </div>
 
