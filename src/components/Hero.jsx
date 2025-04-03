@@ -7,9 +7,11 @@ function Hero() {
       <p>
         WIDS Datathon Workshop 2025 <br />
         (Online Mode)<br />
-        April 19, 2025 | 10:30 AM to 12:30 PM
+        April 15 & 19, 2025
       </p>
-      <button>Register Now</button>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfG5CErgkRoJu0mrjNr5R7pMwtvplOj3hIaKyfLpT6D7rnAuA/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <button>Register Now</button>
+      </a>
     </div>
   );
 }

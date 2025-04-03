@@ -17,7 +17,7 @@ function Navbar() {
       <ul className={isOpen ? 'open' : ''}>
         <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
         <li><a href="#event" onClick={() => setIsOpen(false)}>Event</a></li>
-        <li><a href="#speaker" onClick={() => setIsOpen(false)}>Speaker</a></li>
+        <li><a href="#speaker" onClick={() => setIsOpen(false)}>Speakers</a></li>
         <li><a href="#committee" onClick={() => setIsOpen(false)}>Committee</a></li>
       </ul>
       <div className="rlogo">

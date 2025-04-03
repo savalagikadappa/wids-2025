@@ -19,6 +19,17 @@ function Description() {
           <li><a href="#">WiDS Workshop 2022</a></li>
         </ul>
       </div>
+
+      <div className="updates-placeholder">
+        <div className="graphic-overlay">
+          <div className="circle"></div>
+          <div className="square"></div>
+          <div className="globe">
+            <span className="updates-text">Updates</span>
+            <span className="coming-soon-text">Coming soon!</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -16,14 +16,6 @@ const Committee = () => {
                             <p className="name">Dr. Ashok Shettar</p>
                             <p className="designation">Pro Chancellor</p>
                         </div>
-                        <div className="member">
-                            <p className="name">Dr. Meena S. M</p>
-                            <p className="designation">Dean Faculty, SoCSE</p>
-                        </div>
-                        <div className="member">
-                            <p className="name">Dr. Vijayalakshmi M</p>
-                            <p className="designation">HoS, SoCSE</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -34,6 +26,24 @@ const Committee = () => {
                     <p className="title">Advisors</p>
                     <div className="memberGroup">
                         <div className="member">
+                            <img src="/hod-vijayalakshmi-1.jpg" alt="Dr. Vijayalakshmi M" className="memberImage" />
+                            <p className="name">Dr. Vijayalakshmi M</p>
+                            <p className="designation">HoS, SoCSE</p>
+                        </div>
+
+                        <div className="member">
+                            <img src="/advisor-uma.jpg" alt="Dr. Uma Mudenagudi" className="memberImage" />
+                            <p className="name">Dr. Uma Mudenagudi</p>
+                            <p className="designation">Dean R&D</p>
+                        </div>
+
+                        <div className="member">
+                            <img src="/ambassador-meena.jpg" alt="Dr. Meena S. M" className="memberImage" />
+                            <p className="name">Dr. Meena S. M</p>
+                            <p className="designation">Dean Faculty, SoCSE</p>
+                        </div>
+
+                        <div className="member">
                             <p className="name">Prof. B. L Desai</p>
                             <p className="designation">Executive Dean</p>
                         </div>
@@ -41,10 +51,8 @@ const Committee = () => {
                             <p className="name">Prof. B. S Anami</p>
                             <p className="designation">Registrar</p>
                         </div>
-                        <div className="member">
-                            <p className="name">Dr. Uma Mudenagudi</p>
-                            <p className="designation">Dean R&D</p>
-                        </div>
+
+
                         <div className="member">
                             <p className="name">Ms. Srujana K</p>
                             <p className="designation">AI Leader at Walmart Global Tech, USA</p>
@@ -71,19 +79,16 @@ const Committee = () => {
             <div className="coAmbassadorsContainer">
                 <p className="title">WiDS Co-Ambassadors</p>
                 <div className="memberGroup">
-                    
                     <div className="member">
                         <img src="/co-ambassador-padmashree.jpg" alt="Dr. Padmashree Desai" className="memberImage" />
                         <p className="name">Dr. Padmashree Desai</p>
                         <p className="designation">Professor, SoCSE</p>
                     </div>
-
                     <div className="member">
                         <img src="/nehamadam.jpeg" alt="Mrs Neha T" className="memberImage" />
                         <p className="name">Mrs. Neha T</p>
                         <p className="designation">Faculty, SoCSE</p>
                     </div>
-
                 </div>
             </div>
 
@@ -93,7 +98,6 @@ const Committee = () => {
                 <div className="organizerGroup">
                     <p className="organizerName">Dr. P. G Sunitha Hiremath</p>
                     <p className="organizerName">Prof. Sneha V</p>
-                    <p className="organizerName">Prof. Tulasa B</p>
                     <p className="organizerName">Prof. Shilpa Hotagi</p>
                     <p className="organizerName">Prof. Channabasappa</p>
                     <p className="organizerName">Prof. Vaishnavi</p>
