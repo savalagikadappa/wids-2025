@@ -9,7 +9,7 @@ import './styles/styles.css';
 
 function App() {
   return (
-    <div>
+    <div id='root'>
       <Navbar />
       <div id="home">
         <Hero />
