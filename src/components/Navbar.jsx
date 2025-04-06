@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav>
       <div className="logo">
-        <img src="/wids-matrix-1line-logo1.jpg" alt="Left Logo" />
+        <img src="/logo.png" alt="Left Logo" />
       </div>
       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         {/* Hamburger icon (three lines) */}

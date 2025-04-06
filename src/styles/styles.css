@@ -51,7 +51,7 @@ body {
 
 /* Navbar styles */
 nav {
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     color: white;
     padding: 20px 40px;
     display: flex;
@@ -647,7 +647,8 @@ footer {
     }
 
     .logo img {
-        height: 60px;
+        height:90px;
+        width: 200px;
     }
 
     .rlogo img {
