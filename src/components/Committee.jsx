@@ -49,7 +49,7 @@ const Committee = () => {
 
                         <div className="member">
                             <img src="/narayan.jpg" alt="Mr. Narayan D G" className="memberImage" />
-                            <p className="name">Mr. Narayan D G</p>
+                            <p className="name">Dr. Narayan D G</p>
                             <p className="designation"> Faculty, Dept of CSE</p>
                         </div>
                     </div>
