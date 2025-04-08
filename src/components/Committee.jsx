@@ -12,12 +12,6 @@ const Committee = () => {
                     <p className="title">Advisors</p>
                     <div className="memberGroup">
                         <div className="member">
-                            <img src="/hod-vijayalakshmi-1.jpg" alt="Dr. Vijayalakshmi M" className="memberImage" />
-                            <p className="name">Dr. Vijayalakshmi M</p>
-                            <p className="designation">HoD, Dept of CSE</p>
-                        </div>
-
-                        <div className="member">
                             <img src="/advisor-uma.jpg" alt="Dr. Uma Mudenagudi" className="memberImage" />
                             <p className="name">Dr. Uma Mudenagudi</p>
                             <p className="designation">Dean R&D</p>
@@ -26,8 +20,22 @@ const Committee = () => {
                         <div className="member">
                             <img src="/ambassador-meena.jpg" alt="Dr. Meena S. M" className="memberImage" />
                             <p className="name">Dr. Meena S. M</p>
-                            <p className="designation"> Faculty, Dept of CSE AI</p>
+                            <p className="designation"> Dean, FSC</p>
                         </div>
+
+                        <div className="member">
+                            <img src="/hod-vijayalakshmi-1.jpg" alt="Dr. Vijayalakshmi M" className="memberImage" />
+                            <p className="name">Dr. Vijayalakshmi M</p>
+                            <p className="designation">HoD, Dept of CSE</p>
+                        </div>
+
+
+                        <div className="member">
+                            <img src="/narayan.jpg" alt="Mr. Narayan D G" className="memberImage" />
+                            <p className="name">Dr. Narayan D G</p>
+                            <p className="designation"> HoD, Dept of CSE-AI</p>
+                        </div>
+
 
                         <div className="member">
                             <img src="/co-ambassador-sujatha.jpg" alt="Dr. Sujatha C" className="memberImage" />
@@ -43,15 +51,11 @@ const Committee = () => {
 
                         <div className="member">
                             <img src="/nehamadam.jpeg" alt="Mrs Neha T" className="memberImage" />
-                            <p className="name">Mrs. Neha T</p>
-                            <p className="designation"> Professor, Dept of CSE</p>
-                        </div>
-
-                        <div className="member">
-                            <img src="/narayan.jpg" alt="Mr. Narayan D G" className="memberImage" />
-                            <p className="name">Dr. Narayan D G</p>
+                            <p className="name">Prof. Neha Tarannum</p>
                             <p className="designation"> Faculty, Dept of CSE</p>
                         </div>
+
+
                     </div>
                 </div>
             </div>

@@ -1,89 +1,86 @@
 import React from 'react';
+import '../styles/Speakers.css';
+
+const speakerData = [
+  {
+    id: 1,
+    name: "Ms. Ashwini Chandrashekharaiah",
+    image: "/ashwini-speaker2.png",
+    title: "Senior Manager, Walmart Global Tech India",
+    email: "ashwini.chandrashekharaiah@walmart.com",
+    topic: "Crack the Code: Mastering the WiDS Datathon 2025",
+    date: "15/04/25",
+    displayDate: "15th April 2025",
+    time: "4:30 PM - 5:30 PM IST",
+  },
+  {
+    id: 2,
+    name: "Ms. Srujana Kaddevarmuth",
+    image: "/srujana-speaker1.png",
+    title: "AI Leader, Walmart Global Tech, USA",
+    email: "srujana.aba@gmail.com",
+    topic: "Trends in Gen AI",
+    date: "19/04/25",
+    displayDate: "19th April 2025",
+    time: "8:30 AM - 10:00 AM IST",
+  },
+  {
+    id: 3,
+    name: "Dr. Saroja Naik",
+    image: "/saroja-speaker.png",
+    title: "Neurologist and Expert in Brain Health",
+    email: "sarojaaralikatte@gmail.com",
+    topic: "Unraveling the Mysteries of the Female Brain",
+    date: "19/04/25",
+    displayDate: "19th April 2025",
+    time: "10:00 AM - 11:00 AM IST",
+  },
+];
 
 function Speakers() {
   return (
-    <div className="speakers-table-container">
-
-      {/* Table - Visible for large screens */}
+    <div className="speakers-container">
+      {/* Table View */}
       <table className="speakers-table">
         <thead>
           <tr>
             <th>Date</th>
             <th>Speaker</th>
             <th>Topic</th>
-            <th>Mail</th>
             <th>Time</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>15/04/25</td>
-            <td>
-              <img src="/ashwini-speaker2.png" alt="Ashwini Chandrashekharaiah" /><br />
-              <strong>Ms. Ashwini Chandrashekharaiah</strong><br />
-              Senior Manager, Walmart Global Tech India
-            </td>
-            <td>Crack the Code: Mastering the WiDS Datathon 2025</td>
-            <td>ashwini.chandrashekharaiah@walmart.com</td>
-            <td>4:30 PM - 5:30 PM IST</td>
-          </tr>
-
-          <tr>
-            <td>19/04/25</td>
-            <td>
-              <img src="/srujana-speaker1.png" alt="Srujana Kaddevarmuth" /><br />
-              <strong>Ms. Srujana Kaddevarmuth</strong><br />
-              AI Leader, Walmart Global Tech, USA
-            </td>
-            <td>Trends in Gen AI</td>
-            <td>srujana.aba@gmail.com</td>
-            <td>8:30 AM - 10:00 AM IST</td>
-          </tr>
-
-          <tr>
-            <td>19/04/25</td>
-            <td>
-              <img src="/saroja-speaker.png" alt="Dr. Saroja Naik" /><br />
-              <strong>Dr. Saroja Naik</strong><br />
-              Neurologist and Expert in Brain Health
-            </td>
-            <td>Unraveling the Mysteries of the Female Brain</td>
-            <td>sarojaaralikatte@gmail.com</td>
-            <td>10:00 AM - 11:00 AM IST</td>
-          </tr>
+          {speakerData.map((s) => (
+            <tr key={s.id}>
+              <td>{s.date}</td>
+              <td>
+                <img src={s.image} alt={s.name} />
+                <br />
+                <strong>{s.name}</strong><br />
+                {s.title} <br /><br />
+                {s.email}
+              </td>
+              <td>{s.topic}</td>
+              <td>{s.time}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
 
-      {/* Cards - Visible only below 900px */}
+      {/* Card View */}
       <div className="speaker-cards">
-        <div className="speaker-card">
-          <img src="/ashwini-speaker2.png" alt="Ashwini Chandrashekharaiah" />
-          <h3>Ms. Ashwini Chandrashekharaiah</h3>
-          <p><strong>Topic:</strong> Crack the Code: Mastering the WiDS Datathon 2025</p>
-          <p><strong>Mail:</strong> ashwini.chandrashekharaiah@walmart.com</p>
-          <p><strong>Date:</strong> 15/04/25</p>
-          <p><strong>Time:</strong> 4:30 PM - 5:30 PM IST</p>
-        </div>
-
-        <div className="speaker-card">
-          <img src="/srujana-speaker1.png" alt="Srujana Kaddevarmuth" />
-          <h3>Ms. Srujana Kaddevarmuth</h3>
-          <p><strong>Topic:</strong> Trends in Gen AI</p>
-          <p><strong>Mail:</strong> srujana.aba@gmail.com</p>
-          <p><strong>Date:</strong> 19/04/25</p>
-          <p><strong>Time:</strong> 8:30 AM - 10:00 AM IST</p>
-        </div>
-
-        <div className="speaker-card">
-          <img src="/saroja-speaker.png" alt="Dr. Saroja Naik" />
-          <h3>Dr. Saroja Naik</h3>
-          <p><strong>Topic:</strong> Unraveling the Mysteries of the Female Brain</p>
-          <p><strong>Mail:</strong> sarojaaralikatte@gmail.com</p>
-          <p><strong>Date:</strong> 19/04/25</p>
-          <p><strong>Time:</strong> 10:00 AM - 11:00 AM IST</p>
-        </div>
+        {speakerData.map((s) => (
+          <div className="speaker-card" key={s.id}>
+            <img src={s.image} alt={s.name} />
+            <h3>{s.name}</h3>
+            <p><strong>Topic:</strong> {s.topic}</p>
+            <p><strong>Email-Id:</strong> {s.email}</p>
+            <p><strong>Date:</strong> {s.displayDate}</p>
+            <p><strong>Time:</strong> {s.time}</p>
+          </div>
+        ))}
       </div>
-
     </div>
   );
 }

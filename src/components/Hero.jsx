@@ -9,7 +9,7 @@ function Hero() {
         (Online Mode)<br />
         April 15 & 19, 2025
       </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfG5CErgkRoJu0mrjNr5R7pMwtvplOj3hIaKyfLpT6D7rnAuA/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">
+      <a href="https://forms.gle/bAkHPePPZY16K2fV7" target="_blank" rel="noopener noreferrer">
         <button>Register Now</button>
       </a>
     </div>

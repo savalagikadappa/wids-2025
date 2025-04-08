@@ -1,0 +1,129 @@
+/* ---------- Layout ---------- */
+.speakers-container {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* ---------- Table Styles ---------- */
+.speakers-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.speakers-table th,
+.speakers-table td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.speakers-table th {
+    background-color: #2f855a;
+    color: white;
+    font-size: 1.05rem;
+}
+
+.speakers-table tr:last-child td {
+    border-bottom: none;
+}
+
+.speakers-table img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Individual Card (Cool and Centered) ---------- */
+.speaker-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.speaker-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.speaker-card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+    border: 3px solid #2f855a;
+}
+
+.speaker-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.speaker-card p {
+    margin: 0.5rem 0;
+    font-size: 1.05rem;
+    color: #4a5568;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+.speaker-card strong {
+    color: #2f855a;
+    font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+    .speakers-container {
+        grid-template-columns: 1fr;
+    }
+
+    .speakers-table {
+        display: none;
+    }
+
+    .speaker-card {
+        flex: 1 1 100%;
+    }
+
+    .speaker-cards {
+        justify-content: center;
+    }
+
+    .speaker-cards {
+        justify-content: center;
+    }
+
+    .speaker-card {
+        /* max-width: 100%; */
+        padding: 1.5rem;
+    }
+
+}
