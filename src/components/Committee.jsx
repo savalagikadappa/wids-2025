@@ -9,11 +9,11 @@ const members = {
         { name: "Dr. Narayan D G", designation: "HoD, Dept of CSE-AI", image: "/narayan.jpg" }
     ],
     ambassador: [
-        { name: "Dr. Sujatha C", role: "WiDS Ambassador", designation: "Faculty, Dept of CSE", image: "/co-ambassador-sujatha.jpg" }
+        { name: "Dr. Sujatha C", designation: "Faculty, Dept of CSE", image: "/co-ambassador-sujatha.jpg" }
     ],
     coAmbassadors: [
-        { name: "Dr. Padmashree Desai", role: "WiDS Co-Ambassador", designation: "Faculty, Dept of CSE", image: "/co-ambassador-padmashree.jpg" },
-        { name: "Prof. Neha Tarannum", role: "WiDS Co-Ambassador", designation: "Faculty, Dept of CSE", image: "/nehamadam.jpeg" }
+        { name: "Dr. Padmashree Desai", designation: "Faculty, Dept of CSE", image: "/co-ambassador-padmashree.jpg" },
+        { name: "Prof. Neha Tarannum", designation: "Faculty, Dept of CSE", image: "/nehamadam.jpeg" }
     ]
 };
 
