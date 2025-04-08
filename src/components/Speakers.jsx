@@ -69,6 +69,7 @@ function Speakers() {
       </table> */}
 
       {/* Card View */}
+      <h1>Speakers</h1>
       <div className="speaker-cards">
         {speakerData.map((s) => (
           <div className="speaker-card" key={s.id}>
