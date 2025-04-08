@@ -6,42 +6,6 @@
     padding: 2rem;
 }
 
-/* ---------- Table Styles ---------- */
-.speakers-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-}
-
-.speakers-table th,
-.speakers-table td {
-    padding: 1rem 1.2rem;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-    font-size: 0.95rem;
-}
-
-.speakers-table th {
-    background-color: #2f855a;
-    color: white;
-    font-size: 1.05rem;
-}
-
-.speakers-table tr:last-child td {
-    border-bottom: none;
-}
-
-.speakers-table img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 0.5rem;
-}
-
 /* ---------- Individual Card (Cool and Centered) ---------- */
 .speaker-cards {
     display: flex;
@@ -57,7 +21,7 @@
     padding: 2rem;
     border: none;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -100,17 +64,15 @@
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 900px) {
+@media (max-width: 100px) {
     .speakers-container {
         grid-template-columns: 1fr;
     }
 
-    .speakers-table {
-        display: none;
-    }
 
     .speaker-card {
         flex: 1 1 100%;
+        min-width: 400px;
     }
 
     .speaker-cards {
@@ -127,3 +89,9 @@
     }
 
 }
+
+/* @media (min-width:1000) {
+    .speaker-card{
+        max-width: 600px;
+    }
+} */

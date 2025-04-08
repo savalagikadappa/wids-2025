@@ -28,6 +28,7 @@
   font-weight: 600;
   color: #2c3e50;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 /* Member Styles */
@@ -43,7 +44,7 @@
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  width: 180px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
@@ -67,33 +68,43 @@
   color: #333;
 }
 
-.designation {
+.role {
   font-size: 14px;
+  font-weight: bold;
+  color: #2980b9;
+  margin: 5px 0;
+}
+
+.designation {
+  font-size: 16px;
   color: #777;
 }
 
-/* Organizers */
-.organizersContainer {
-  margin-top: 30px;
+/* Ambassador and Co-Ambassador Container (Using Grid) */
+.ambassadorContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Default: single column for narrow screens */
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: start;
 }
 
-.organizerGroup {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+/* Ensure subsection titles and content are centered */
+.subsection {
+  text-align: center;
 }
 
-.organizerName {
-  background: #3498db;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 500;
+/* Media Query: For screens wider than 768px, show side-by-side */
+@media (min-width: 768px) {
+  .ambassadorContainer {
+    grid-template-columns: 1fr 1fr;
+    /* Two columns */
+  }
 }
 
-/* Responsive */
+/* Responsive adjustments for member cards on small screens */
 @media (max-width: 600px) {
   .memberGroup {
     flex-direction: column;

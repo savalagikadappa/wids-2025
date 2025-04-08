@@ -41,7 +41,7 @@ function Speakers() {
   return (
     <div className="speakers-container">
       {/* Table View */}
-      <table className="speakers-table">
+      {/* <table className="speakers-table">
         <thead>
           <tr>
             <th>Date</th>
@@ -66,7 +66,7 @@ function Speakers() {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
 
       {/* Card View */}
       <div className="speaker-cards">
@@ -75,9 +75,9 @@ function Speakers() {
             <img src={s.image} alt={s.name} />
             <h3>{s.name}</h3>
             <p><strong>Topic:</strong> {s.topic}</p>
+            <p><strong>Date:</strong> <b>{s.displayDate}</b></p>
+            <p><strong>Time:</strong> <b>{s.time}</b></p>
             <p><strong>Email-Id:</strong> {s.email}</p>
-            <p><strong>Date:</strong> {s.displayDate}</p>
-            <p><strong>Time:</strong> {s.time}</p>
           </div>
         ))}
       </div>
