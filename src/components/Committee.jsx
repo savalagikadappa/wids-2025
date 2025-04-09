@@ -58,6 +58,17 @@ const Committee = () => {
                         ))}
                     </div>
                 </div>
+
+            </div>
+            <div className="section">
+                <p className="title">Organizing Committee</p>
+                <ul className="organizers">
+                    <li>Dr. P.G Sunitha Hiremath</li>
+                    <li>Prof. Sneha Varur</li>
+                    <li>Prof. Channabasappa M</li>
+                    <li>Ms. Shilpa S. Hotagi</li>
+                    <li>Ms. Vaishnavi M</li>
+                </ul>
             </div>
 
         </div>
