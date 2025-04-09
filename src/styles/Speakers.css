@@ -131,3 +131,21 @@
     white-space: pre-line;
     /* Helps respect \n for line breaks */
 }
+
+
+.linkedin-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0A66C2;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-button:hover {
+    background-color: #084c98;
+}
